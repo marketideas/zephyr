@@ -94,7 +94,8 @@
 	current-speed = <115200>;
 };
 
-&sas_uart {
+&uart3 {
+	compatible = "nxp,kinetis-uart16"
 	status = "okay";
 	current-speed = <19200>;
 };

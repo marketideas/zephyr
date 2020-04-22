@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 &cpu0 {
 	clock-frequency = <180000000>;
 };

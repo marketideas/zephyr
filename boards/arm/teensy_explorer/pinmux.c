@@ -48,12 +48,6 @@ static int teensy_explorer_pinmux_init(struct device *dev)
     pinmux_pin_set(portd, 3, PORT_PCR_MUX(kPORT_MuxAlt3));
 #endif
 
-#ifdef CONFIG_SAS_UART_MCUX_3
-    /* UART3 RX, TX */
-    pinmux_pin_set(portb, 10, PORT_PCR_MUX(kPORT_MuxAlt3));
-    pinmux_pin_set(portb, 11, PORT_PCR_MUX(kPORT_MuxAlt3));
-
-#endif
     /* SW3 */
     pinmux_pin_set(porta,  4, PORT_PCR_MUX(kPORT_MuxAsGpio));
 
