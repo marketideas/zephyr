@@ -5,12 +5,6 @@
 
 if BOARD_TEENSY_EXPLORER
 
-config SAS_UART_MCUX_3
-	bool "SASUART 3"
-	default y
-	help
-	  Enable SASUART 3.
-
 if TEENSY_3_6
 
 config BOARD
@@ -96,9 +90,6 @@ config UART_MCUX_0
 
 config UART_MCUX_3
 	default y if BT_UART
-
-config SAS_UART_MCUX_3
-	default n
 
 endif # UART_MCUX
 
