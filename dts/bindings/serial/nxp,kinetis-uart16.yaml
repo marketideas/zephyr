@@ -1,0 +1,15 @@
+description: Kinetis 9-bit UART
+
+compatible: "nxp,kinetis-uart16"
+
+include: uart-controller.yaml
+
+properties:
+    reg:
+      required: true
+
+    interrupts:
+      required: true
+
+    clocks:
+      required: true
